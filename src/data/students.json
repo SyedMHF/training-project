@@ -1,0 +1,98 @@
+[
+  {
+    "matricNumber": "2011297082",
+    "name": "MUHAMMAD HASSAN FIRDAUS BIN RUSLAN",
+    "address": "NO55/L, KG. BARU, 50300 WP KUALA LUMPUR ",
+    "contactNumber": "0102986175",
+    "emailAddress": "syedhassanfirdaus@gmail.com",
+    "course": "Computer Science",
+    "semester": "7",
+    "icNumber": "930430035707",
+    "faculty": {
+      "name": "FSKM",
+      "code": "CS230"
+    },
+    "studentType": "FULL_TIME",
+    "clazzEnrollment": {
+      "name": "5A",
+      "code": "CS2305A",
+      "room": "13C",
+      "course": {
+        "name": "Java Programming",
+        "code": "CSC750",
+        "creditHour": "4"
+      },
+      "lecturer": {
+        "name": "Fuziah Nawi",
+        "room": "B21",
+        "faculty": "FSKM"
+      },
+      "time": "8AM-10AM"
+    },
+    "studentStatus": "ACTIVE"
+  },
+  {
+    "matricNumber": "2014520357",
+    "name": "MUHAMMAD SYED BIN FIRDAUS",
+    "address": "NO55/L, KG. BARU, 50300 WP KUALA LUMPUR ",
+    "contactNumber": "0102986175",
+    "emailAddress": "syedhassanfirdaus@gmail.com",
+    "course": "Computer Science",
+    "semester": "7",
+    "icNumber": "930430035707",
+    "faculty": {
+      "name": "FSKM",
+      "code": "CS230"
+    },
+    "studentType": "FULL_TIME",
+    "clazzEnrollment": {
+      "name": "5A",
+      "code": "CS2305A",
+      "room": "13C",
+      "course": {
+        "name": "Java Programming",
+        "code": "CSC750",
+        "creditHour": "4"
+      },
+      "lecturer": {
+        "name": "Fuziah Nawi",
+        "room": "B21",
+        "faculty": "FSKM"
+      },
+      "time": "8AM-10AM"
+    },
+    "studentStatus": "ACTIVE"
+  },
+  {
+    "matricNumber": "2014365987",
+    "name": "MUHAMMAD FIRDAUS BIN HASSAN",
+    "address": "NO55/L, KG. BARU, 50300 WP KUALA LUMPUR ",
+    "contactNumber": "0102986175",
+    "emailAddress": "syedhassanfirdaus@gmail.com",
+    "course": "Computer Science",
+    "semester": "7",
+    "icNumber": "930430035707",
+    "faculty": {
+      "name": "FSKM",
+      "code": "CS230"
+    },
+    "studentType": "PART_TIME",
+    "clazzEnrollment": {
+      "name": "5A",
+      "code": "CS2305A",
+      "room": "13C",
+      "course": {
+        "name": "Java Programming",
+        "code": "CSC750",
+        "creditHour": "4"
+      },
+      "lecturer": {
+        "name": "Fuziah Nawi",
+        "room": "B21",
+        "faculty": "FSKM"
+      },
+      "time": "8AM-10AM"
+    },
+    "studentStatus": "ACTIVE"
+  }
+]

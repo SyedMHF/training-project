@@ -1,0 +1,50 @@
+<h1 mat-dialog-title>Add New Student</h1>
+<div mat-dialog-content>
+  <form [formGroup]="editorForm">
+    <div layout="row" class="pad-bottom" flex>
+      <mat-form-field flex>
+        <input matInput
+               placeholder="Matric Number"
+               formControlName="matricNumber"
+               type="text"
+               flex/>
+      </mat-form-field>
+    </div>
+    <div layout="row" class="pad-bottom" flex>
+      <mat-form-field flex>
+        <input matInput
+               placeholder="Name"
+               formControlName="name"
+               type="text"
+               flex/>
+      </mat-form-field>
+    </div>
+    <div layout="row" class="pad-bottom" flex>
+      <mat-form-field flex>
+        <mat-select placeholder="Student Status" formControlName="studentStatus" flex>
+          <mat-option value="ACTIVE">ACTIVE</mat-option>
+          <mat-option value="DISMISS">DISMISS</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div layout="row" class="pad-bottom" flex>
+      <mat-form-field flex>
+        <input matInput
+               placeholder="Email"
+               formControlName="email"
+               type="email"
+               flex/>
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="accent" (click)="save(editorForm.value)" [disabled]="!editorForm.valid">
+    Add
+  </button>
+  <button mat-button color="primary" (click)="close()">
+    Cancel
+  </button>
+</div>
+
+

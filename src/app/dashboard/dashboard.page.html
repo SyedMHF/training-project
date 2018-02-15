@@ -1,0 +1,191 @@
+<td-layout-nav title="Student Management System" navigationRoute="/">
+  <button mat-icon-button td-menu-button tdLayoutToggle>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <span>Student Management System</span>
+    <span flex></span>
+    <a mat-icon-button matTooltip="Profile">
+      <mat-icon>person</mat-icon>
+    </a>
+    <span>Admin</span>
+  </div>
+  <!--<div mat-content flex>-->
+    <!--<div layout-gt-md="row">-->
+      <!--<div flex-gt-md="70">-->
+        <!--<mat-card>-->
+          <!--<mat-card-title>Students</mat-card-title>-->
+          <!--<mat-card-subtitle>List of students</mat-card-subtitle>-->
+          <!--<mat-divider></mat-divider>-->
+          <!--<mat-list>-->
+            <!--<ng-template let-student let-last="last" ngFor [ngForOf]="students$ | async">-->
+              <!--<mat-list-item>-->
+                <!--<h3 mat-line> {{student?.name}} </h3>-->
+                <!--<span flex></span>-->
+                <!--<span flex="80" layout-gt-xs="row">-->
+									<!--<div class="mat-caption tc-grey-700" flex-gt-xs="30"> {{ student?.matricNumber }} </div>-->
+									<!--<div class="mat-caption tc-grey-700" flex-gt-xs="50"> {{ student?.studentStatus }} </div>-->
+								<!--</span>-->
+                <!--<span>-->
+									<!--&lt;!&ndash;button&ndash;&gt;-->
+									<!--<button mat-icon-button (click)="viewStudent(student)">-->
+										<!--<mat-icon>arrow_forward</mat-icon>-->
+									<!--</button>-->
+								<!--</span>-->
+              <!--</mat-list-item>-->
+              <!--<mat-divider *ngIf="!last"></mat-divider>-->
+            <!--</ng-template>-->
+          <!--</mat-list>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+      <!--<div flex-gt-md="30">-->
+        <!--<mat-card>-->
+          <!--<mat-nav-list flex dense>-->
+            <!--<mat-list-item>-->
+              <!--<mat-icon mat-list-avatar>gavel</mat-icon>-->
+              <!--<h4 mat-line>Deactivate</h4>-->
+              <!--<p mat-line>Deactivate this record</p>-->
+            <!--</mat-list-item>-->
+            <!--<mat-list-item>-->
+              <!--<mat-icon mat-list-avatar>check</mat-icon>-->
+              <!--<h4 mat-line>Activate</h4>-->
+              <!--<p mat-line>Activate this record</p>-->
+            <!--</mat-list-item>-->
+            <!--<mat-list-item>-->
+              <!--<mat-icon mat-list-avatar>delete</mat-icon>-->
+              <!--<h4 mat-line>Delete</h4>-->
+              <!--<p mat-line>Delete this record</p>-->
+            <!--</mat-list-item>-->
+          <!--</mat-nav-list>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div mat-content flex>-->
+    <!--<div layout-gt-md="row">-->
+      <!--<div flex-gt-md="100">-->
+        <!--<mat-card>-->
+          <!--<mat-tab-group>-->
+            <!--<mat-tab label="One">-->
+              <!--<mat-accordion>-->
+                <!--<mat-expansion-panel>-->
+                  <!--<mat-expansion-panel-header>-->
+                    <!--<mat-panel-title>-->
+                      <!--Personal data-->
+                    <!--</mat-panel-title>-->
+                    <!--<mat-panel-description>-->
+                      <!--Type your name and age-->
+                    <!--</mat-panel-description>-->
+                  <!--</mat-expansion-panel-header>-->
+                  <!--<mat-form-field>-->
+                    <!--<input matInput placeholder="First name">-->
+                  <!--</mat-form-field>-->
+                  <!--<mat-form-field>-->
+                    <!--<input matInput placeholder="Age">-->
+                  <!--</mat-form-field>-->
+                <!--</mat-expansion-panel>-->
+                <!--<mat-expansion-panel (opened)="panelOpenState = true"-->
+                                     <!--(closed)="panelOpenState = false">-->
+                  <!--<mat-expansion-panel-header>-->
+                    <!--<mat-panel-title>-->
+                      <!--Self aware panel-->
+                    <!--</mat-panel-title>-->
+                    <!--<mat-panel-description>-->
+                      <!--Currently I am {{panelOpenState ? 'open' : 'closed'}}-->
+                    <!--</mat-panel-description>-->
+                  <!--</mat-expansion-panel-header>-->
+                  <!--<p>I'm visible because I am open</p>-->
+                <!--</mat-expansion-panel>-->
+              <!--</mat-accordion>-->
+            <!--</mat-tab>-->
+            <!--<mat-tab label="Two">-->
+              <!--<h1>Some more tab content</h1>-->
+              <!--<p>...</p>-->
+            <!--</mat-tab>-->
+          <!--</mat-tab-group>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div layout-gt-md="column">-->
+    <div mat-content flex>
+      <div layout-gt-md="row">
+        <div flex-gt-md="40">
+          <!--<mat-grid-list cols="3">-->
+          <!--<mat-grid-tile>-->
+            <mat-card style="background-color:lightcoral">
+              <mat-card-title>Student Info</mat-card-title>
+              <!--<mat-card-subtitle> Card subtitle</mat-card-subtitle>-->
+              <mat-card-content>
+                <p>View and manage student's information here.</p>
+                <mat-card-actions>
+                  <!--<button mat-icon-button color="accent" (click)="viewStudentInfo(matricNumber)">-->
+                    <!--<mat-icon>group</mat-icon>-->
+                  <!--</button>-->
+                  <a mat-fab color="accent" (click)="viewStudentInfo()">
+                  <mat-icon>group</mat-icon>
+                  </a>
+                </mat-card-actions>
+              </mat-card-content>
+              <mat-card-footer></mat-card-footer>
+            </mat-card>
+        </div>
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div mat-content flex>-->
+      <!--<div layout-gt-md="row">-->
+        <div flex-gt-md="40">
+          <!--</mat-grid-tile>-->
+          <!--<mat-grid-tile>-->
+            <mat-card style="background-color: cadetblue">
+              <mat-card-title> Class Enrollment</mat-card-title>
+              <!--<mat-card-subtitle> Card subtitle</mat-card-subtitle>-->
+              <mat-card-content>
+                <p>View and manage class enrollment here.</p>
+                <mat-card-actions>
+                  <a mat-fab color="accent" (click)="viewClassEnrollment()">
+                    <mat-icon>account_balance</mat-icon>
+                  </a>
+                </mat-card-actions>
+              </mat-card-content>
+              <mat-card-footer></mat-card-footer>
+            </mat-card>
+        </div>
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div mat-content flex>-->
+      <!--<div layout-gt-md="column">-->
+        <div flex-gt-md="40">
+          <!--</mat-grid-tile>-->
+          <!--<mat-grid-tile>-->
+            <mat-card style="background-color: cornflowerblue">
+              <mat-card-title> Course Enrollment</mat-card-title>
+              <!--<mat-card-subtitle> Card subtitle</mat-card-subtitle>-->
+              <mat-card-content>
+                <p>View and manage course enrollment here.</p>
+                <mat-card-actions>
+                  <a mat-fab color="accent" (click)="viewCourseEnrollment()">
+                   <mat-icon>assignment</mat-icon>
+                  </a>
+                </mat-card-actions>
+              </mat-card-content>
+              <mat-card-footer></mat-card-footer>
+            </mat-card>
+          <!--</mat-grid-tile>-->
+        <!--</mat-grid-list>-->
+        </div>
+      </div>
+    </div>
+  <!--</div>-->
+  <td-layout-footer>
+    <div layout="row" layout-align="start center">
+      <span class="mat-caption">Copyright &copy; 2017 Terang LLP. All rights reserved</span>
+      <span flex></span>
+    </div>
+  </td-layout-footer>
+</td-layout-nav>
+<!--<a mat-fab color="accent" class="mat-fab-bottom-right fixed z-3" (click)="showAddDialog()">-->
+  <!--<mat-icon>add</mat-icon>-->
+<!--</a>-->
+
+

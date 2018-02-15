@@ -1,0 +1,33 @@
+{
+  "matricNumber": "2011297082",
+  "name": "MUHAMMAD HASSAN FIRDAUS BIN RUSLAN",
+  "address": "NO55/L, KG. BARU, 50300 WP KUALA LUMPUR ",
+  "contactNumber": "0102986175",
+  "emailAddress": "syedhassanfirdaus@gmail.com",
+  "course": "Computer Sciences",
+  "semester": "7",
+  "icNumber": "930430035707",
+  "faculty": {
+    "name": "FSKM",
+    "code": "CS230"
+  },
+  "studentType": "PART_TIME",
+  "classEnrollment": {
+    "name": "5A",
+    "code": "CS2305A",
+    "room": "13C",
+    "course": {
+      "name": "Java Programming",
+      "code": "CSC750",
+      "creditHour": "4"
+    },
+    "lecturer": {
+      "name": "Fuziah Nawi",
+      "room": "B21",
+      "faculty": "FSKM"
+    },
+    "time": "8AM-10AM"
+  },
+  "studentStatus": "ACTIVE"
+}
+
